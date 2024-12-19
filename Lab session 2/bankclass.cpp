@@ -32,6 +32,13 @@ class Bank{
 				return true;
 			}
 		}
+		void display(){
+			cout<<"Enter your Account Number: ";
+			cin>>Account_number;
+			cout<<"Your Name : XXX"<<endl;
+			cout<<"Your Account number : "<<Account_number<<endl;
+			cout<<"Your Bank name : "<<Name<<endl;
+		}
 		
 };
 
@@ -48,5 +55,5 @@ int main(){
  }	
  else
  	cout<<"Your bank is not a Centralised Bank"<<endl;
-
+ b1.display();
 }
