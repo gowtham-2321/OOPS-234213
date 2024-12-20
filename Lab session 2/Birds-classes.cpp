@@ -33,7 +33,7 @@ int main() {
     ostrich.can_fly("ostrich");
     ostrich.can_swim("ostrich");
 	
-	sparrow.can_fly("sparrow");
+    sparrow.can_fly("sparrow");
     sparrow.can_swim("sparrow");
     
     penguin.can_fly("penguin");
