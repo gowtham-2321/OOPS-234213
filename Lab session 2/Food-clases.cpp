@@ -1,5 +1,9 @@
 #include <iostream>
-using namespace std;
+/*An important standard library is iostreams, which allow you to read
+from files and the keyboard, and to write to files and the display.*/
+
+
+using namespace std; //All of the Standard C++ libraries are wrapped in a single namespace, which is std (for standard).
 
 class Food {
 
@@ -10,20 +14,24 @@ public:
 	void get_details()
 	{
 		cout<<"Enter the name of the food item: ";
-		cin>>name;
+		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cin>>name; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
 		cout<<"Enter the color of the food item: ";
-		cin>>color;
+		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cin>>color; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
 		cout<<"Enter the cost of the food item: ";
-		cin>>cost;
+		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cin>>cost; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
 		cout<<"Enter the quantity of the food item: ";
+		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 		cin>>quantity;
 	}
     void display() {
-    	cout<<"The name of the food item is: "<<name<<endl;
-		cout<<"The color of the food item is: "<<color<<endl;
-		cout<<"The cost of the food item is: "<<cost<<endl;
-		cout<<"The quantity of the food item is: "<<quantity<<endl; 
-		cout<<"The total cost of the food item is: "<<total_cost()<<endl;
+    	cout<<"The name of the food item is: "<<name<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cout<<"The color of the food item is: "<<color<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cout<<"The cost of the food item is: "<<cost<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cout<<"The quantity of the food item is: "<<quantity<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+		cout<<"The total cost of the food item is: "<<total_cost()<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
     }
     
     int compare_prices(int a, int b, int c){
@@ -55,7 +63,8 @@ int main() {
 	c.display();
 	
 	
-	cout<<"the max cost of the food item is"<<max.compare_prices(a.cost, b.cost, c.cost);
+	cout<<"the max cost of the food item is"<<max.compare_prices(a.cost, b.cost, c.cost); /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+    
 	
     return 0;
 }
