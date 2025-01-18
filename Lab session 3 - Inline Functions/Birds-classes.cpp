@@ -9,7 +9,11 @@ class Bird {
 
 public:
     char species[8];
-    void can_fly(char sp[8]){
+    void can_fly(char sp[8]);
+    void can_swim(char sp[8]); 
+};
+
+void Bird:: can_fly(char sp[8]){
         if (sp == "penguin" || sp =="ostrich") {
         	cout<<sp<<" is not adapted to flying.\n"; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
         }
@@ -17,10 +21,9 @@ public:
             cout<<sp<<" flies exceptionally.\n";
             /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
         }
-    }
+}
 
-
-    void can_swim(char sp[8]){
+void Bird:: can_swim(char sp[8]){
         if (sp == "penguin") {
             cout<<sp<<" swims exceptionally well in water.\n";
             /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
@@ -30,7 +33,8 @@ public:
             /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
         }
     } 
-};
+
+
 
 int main() {
     

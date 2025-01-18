@@ -15,21 +15,26 @@ private:
 
 public:
 	string name;
-    void setMass() {
-    	cout<<"Enter the mass of the planet: "; //in kg
-		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
-    	cin>>mass; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
-    }
-    void setRadius() {
-        cout<<"Enter the radius of the planet: "; // in meters
-		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
-    	cin>>radius; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
-    }
-
-    double calculateEscapeVelocity(){
-        return sqrt(2 * G * mass / radius);
-    }
+    void setMass();
+    void setRadius();
+    double calculateEscapeVelocity();
 };
+
+void Planets:: setMass() {
+	cout<<"Enter the mass of the planet: "; //in kg
+	/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+	cin>>mass; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
+}
+
+void Planets:: setRadius() {
+	cout<<"Enter the radius of the planet: "; // in meters
+	/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+	cin>>radius; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
+}
+
+double Planets:: calculateEscapeVelocity(){
+    return sqrt(2 * G * mass / radius);
+}
 
 int main() {
 	Planets Jupiter, Earth, Mars;

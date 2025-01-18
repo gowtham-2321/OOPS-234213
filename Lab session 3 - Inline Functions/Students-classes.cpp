@@ -10,17 +10,21 @@ class Student {
 public:
 	int Total_marks;
 	string name;
-    void setMarks() {
-    	cout<<"Enter the marks of "<<name<<" :"; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
-    	cin>>Total_marks; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
-    }
-    int avg_marks(int a, int b, int c){
-    	int avg_marks;
-    	avg_marks = (a+b+c)/3;
-    	return avg_marks;
-	}
+    void setMarks();
+    int avg_marks(int a, int b, int c);
 
 };
+
+void Student:: setMarks() {
+	cout<<"Enter the marks of "<<name<<" :"; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+	cin>>Total_marks; /*The operator cin is an object Belongs to input stream class Used to perform read operations from the input devices e.g. keyboard called extraction / get /input operator */
+}
+
+int Student:: avg_marks(int a, int b, int c){
+	int avg_marks;
+	avg_marks = (a+b+c)/3;
+	return avg_marks;
+}
 
 int main() {
 	Student Vardhan, Rajesh, Badri, avg;
