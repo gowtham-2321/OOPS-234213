@@ -6,10 +6,9 @@ class Leaders
 		string Name; // Member variables
 		string Birth_place; // Member variables
 		int years_lived; // Member variables
-		void set() //Member function
+		void set(string N) //Member function
 		{
-			cout<<"Enter Name of the Leader: "; //The operator cout is an object Belongs to output stream (O stream)class.
-			cin>>Name; //The operator cin is an object Belongs to input stream class.
+			Name = N;
 			cout<<"Enter the Birth place of the Person: "; //The operator cout is an object Belongs to output stream (O stream)class.
 			cin>>Birth_place; //The operator cin is an object Belongs to input stream class.
 			cout<<"Years lived: "; //The operator cout is an object Belongs to output stream (O stream)class.
@@ -26,8 +25,18 @@ class Leaders
 int main() // In C++, main( )always has return type of int.
 {
 	Leaders l1,l2; //Creation of object...Memory is allocated here.
-	l1.set(); // Accessing the member functions using . operator.
-	l2.set(); // Accessing the member functions using . operator.
+	string name1, name2;
+
+	cout<<"Enter Name of the Leader 1: "; //The operator cout is an object Belongs to output stream (O stream)class.
+	cin>>name1; //The operator cin is an object Belongs to input stream class.
+	
+	l1.set(name1); // Accessing the member functions using . operator, and passing parameters to the function
+
+	cout<<"Enter Name of the Leader 2: "; //The operator cout is an object Belongs to output stream (O stream)class.
+	cin>>name2; //The operator cin is an object Belongs to input stream class.
+
+	l2.set(name2); // Accessing the member functions using . operator, and passing parameters to the function
+
 	l1.display(); // Accessing the member functions using . operator.
 	l2.display(); // Accessing the member functions using . operator.
 }

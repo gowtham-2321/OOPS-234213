@@ -46,6 +46,7 @@ int main() {
 	c.display(); // Accessing the member functions using . operator.
 	
 	cout<<"the avg height of the trees is: "<<avg.avg_height(a.height, b.height, c.height); /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
+	//paramters are passed to the function
 	
     return 0;
 }

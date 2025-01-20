@@ -60,7 +60,7 @@ int main() {
 	
 	
 	cout<<"the max cost of the fruits is: "<<max.compare_prices(a.cost, b.cost, c.cost); /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
-	
+	//parameters are passed to the function
     return 0;
 }
 
