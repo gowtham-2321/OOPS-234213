@@ -3,17 +3,17 @@ using namespace std; //All of the Standard C++ libraries are wrapped in a single
 class Leaders
 {
 	public:
-		string Name;
-		string Birth_place;
-		int years_lived;
+		string Name; // Member variables
+		string Birth_place; // Member variables
+		int years_lived; // Member variables
 		void set() //Member function
 		{
 			cout<<"Enter Name of the Leader: "; //The operator cout is an object Belongs to output stream (O stream)class.
 			cin>>Name; //The operator cin is an object Belongs to input stream class.
 			cout<<"Enter the Birth place of the Person: "; //The operator cout is an object Belongs to output stream (O stream)class.
-			cin>>Birth_place;
+			cin>>Birth_place; //The operator cin is an object Belongs to input stream class.
 			cout<<"Years lived: "; //The operator cout is an object Belongs to output stream (O stream)class.
-			cin>>years_lived;
+			cin>>years_lived; //The operator cin is an object Belongs to input stream class.
 		}
 		void display() //Member function
 		{
@@ -26,8 +26,9 @@ class Leaders
 int main() // In C++, main( )always has return type of int.
 {
 	Leaders l1,l2; //Creation of object...Memory is allocated here.
-	l1.set();
-	l2.set();
-	l1.display();
-	l2.display();
+	l1.set(); // Accessing the member functions using . operator.
+	l2.set(); // Accessing the member functions using . operator.
+	l1.display(); // Accessing the member functions using . operator.
+	l2.display(); // Accessing the member functions using . operator.
 }
+

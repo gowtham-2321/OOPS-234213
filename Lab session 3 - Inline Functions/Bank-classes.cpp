@@ -5,20 +5,20 @@ from files and the keyboard, and to write to files and the display.*/
 
 using namespace std; //All of the Standard C++ libraries are wrapped in a single namespace, which is std (for standard).
 class Bank{
-	long long int No_of_users;
-    int  Transactions_perday, Principle_amount, Time_period, Revenue, Account_number;
-    float Interest_rate = 7.8;
-    char Type_of_bank[20], Branches[20], Headquarters[30], IFSC_code[10];
+	long long int No_of_users; // Member variables
+    int  Transactions_perday, Principle_amount, Time_period, Revenue, Account_number; // Member variables
+    float Interest_rate = 7.8;// Member variables
+    char Type_of_bank[20], Branches[20], Headquarters[30], IFSC_code[10];// Member variables
     
     public: 
-        char Name[50];
-    	int calculate_interest();
-		bool is_Centralised();
-		void display();
+        char Name[50]; // Member variables
+    	int calculate_interest(); //Member funtions
+		bool is_Centralised(); //Member funtions
+		void display(); //Member funtions
 		
-};
+}; // class construt closed with;
 
-int Bank:: calculate_interest(){
+int Bank:: calculate_interest(){ //Member funtions - inline version of the fuctions
 	float SI;
 	cout<<"Enter the principle amount: ";
 	/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
@@ -34,7 +34,7 @@ int Bank:: calculate_interest(){
 	return SI;
 }
 
-bool Bank:: is_Centralised(){
+bool Bank:: is_Centralised(){ //Member funtions - inline version of the fuctions
 	cout<<"Enter your bank name: ";
 	/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 	cin>>Name;
@@ -47,7 +47,7 @@ bool Bank:: is_Centralised(){
 	}
 }
 
-void Bank:: display(){
+void Bank:: display(){ //Member funtions - inline version of the fuctions
 	cout<<"Enter your Account Number: ";
 	/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 	cin>>Account_number;
@@ -60,14 +60,14 @@ void Bank:: display(){
 int main(){
  float si;
  bool type;
- Bank b1;
+ Bank b1; // object creation
  
- si = b1.calculate_interest();
- type = b1.is_Centralised();
+ si = b1.calculate_interest(); // Accessing the member functions using . operator.
+ type = b1.is_Centralised(); // Accessing the member functions using . operator.
  if(type){
  	cout<<"Your bank is a Centralised Bank"<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
  }	
  else
  	cout<<"Your bank is not a Centralised Bank"<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
- b1.display();
+ b1.display(); // Accessing the member functions using . operator.
 }

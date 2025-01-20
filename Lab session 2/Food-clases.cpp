@@ -8,10 +8,10 @@ using namespace std; //All of the Standard C++ libraries are wrapped in a single
 class Food {
 
 public:
-	int cost, quantity;
-	string name, color;
+	int cost, quantity; // Member variables
+	string name, color; // Member variables
 	
-	void get_details()
+	void get_details() // Member Functions
 	{
 		cout<<"Enter the name of the food item: ";
 		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
@@ -26,7 +26,7 @@ public:
 		/*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 		cin>>quantity;
 	}
-    void display() {
+    void display() { // Member Functions
     	cout<<"The name of the food item is: "<<name<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 		cout<<"The color of the food item is: "<<color<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 		cout<<"The cost of the food item is: "<<cost<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
@@ -34,7 +34,7 @@ public:
 		cout<<"The total cost of the food item is: "<<total_cost()<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
     }
     
-    int compare_prices(int a, int b, int c){
+    int compare_prices(int a, int b, int c){ // Member Functions
     	int max;
     	if(a>=b)
     		max = a;
@@ -45,22 +45,22 @@ public:
     	return max;
 	}
 	
-	int total_cost()
+	int total_cost() // Member Functions
 	{
 		return quantity*cost;
 	}
     
-};
+}; // class construt closed with;
 
 int main() {
-	Food a, b, c, max;
-	a.get_details();
-	b.get_details();
-	c.get_details();
+	Food a, b, c, max; // object creation
+	a.get_details(); // Accessing the member functions using . operator.
+	b.get_details(); // Accessing the member functions using . operator.
+	c.get_details(); // Accessing the member functions using . operator.
 	
-	a.display();
-	b.display();
-	c.display();
+	a.display(); // Accessing the member functions using . operator.
+	b.display(); // Accessing the member functions using . operator.
+	c.display(); // Accessing the member functions using . operator.
 	
 	
 	cout<<"the max cost of the food item is"<<max.compare_prices(a.cost, b.cost, c.cost); /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/

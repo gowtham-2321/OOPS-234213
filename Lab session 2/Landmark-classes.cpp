@@ -1,10 +1,13 @@
 #include <iostream>
+/*An important standard library is iostreams, which allow you to read
+from files and the keyboard, and to write to files and the display.*/
+
 using namespace std; //All of the Standard C++ libraries are wrapped in a single namespace, which is std (for “standard”).
-class landmark
+class landmark // class definition is a logical construct only it does not occupy memory)
 {
 	public:
-		string name;
-		string place;
+		string name; // Member variables
+		string place; // Member variables
 		
 		void set() //Member function
 		{
@@ -23,6 +26,6 @@ class landmark
 int main() // In C++, main( )always has return type of int.
 {
 	landmark l; //Creation of object...Memory is allocated here.
-	l.set();
-	l.display();
+	l.set(); // Accessing the member functions using . operator.
+	l.display(); // Accessing the member functions using . operator.
 }
