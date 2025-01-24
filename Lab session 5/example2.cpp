@@ -16,18 +16,19 @@ int main() {
     
     cout << "Enter GPA of students." << endl;
     for (int i = 0; i < num; ++i) {
-    cout << "Student" << i + 1 << ": ";
-    cin >> *(ptr + i);
+        cout << "Student" << i + 1 << ": ";
+        cin >> *(ptr + i);
     }
     
     cout << "\nDisplaying GPA of students." << endl;
     for (int i = 0; i < num; ++i) {
-    cout << "Student" << i + 1 << ": " << *(ptr + i) << endl;
+        cout << "Student" << i + 1 << ": " << *(ptr + i) << endl;
     }
     
     // ptr memory is released
-    delete[] ptr;
-    ptr = nullptr;
+    delete[] ptr; // delete array which is being pointed by the pointer ptr
+    ptr = nullptr; // the garbage value is cleared and set to 0
+    cout<<ptr;
     
     return 0;
 }

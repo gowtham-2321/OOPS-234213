@@ -20,6 +20,6 @@ int main() {
     // call getAge() function
     ptr->getAge();
     // ptr memory is released
-    delete ptr;
+    delete ptr; // the ptr variable is deleted and the memory is freed up	
     return 0;
 }

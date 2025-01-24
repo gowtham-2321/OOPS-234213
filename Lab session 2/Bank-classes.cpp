@@ -65,4 +65,6 @@ int main(){
  else
  	cout<<"Your bank is not a Centralised Bank"<<endl; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
  b1.display(); // Accessing the member functions using . operator.
+ 
+ cout<<sizeof(b1); // gives the size of the object that we have created
 }
