@@ -58,6 +58,12 @@ class programmer_combo{
             return ((p1.graduate_marks + p2.graduate_marks > 150) && (p1.postgraduate_marks + p2.postgraduate_marks > 180) && (p1.interview_marks + p2.interview_marks > 9));
              
         }
+        void display_sum()
+        {
+        	cout<<"The pair mark in graduate is: "<< p1.graduate_marks + p2.graduate_marks<<endl;
+        	cout<<"The pair mark in post graduate is: "<< p1.postgraduate_marks + p2.postgraduate_marks<<endl;
+			cout<<"The pair mark in interview is: "<< p1.interview_marks + p2.interview_marks<<endl;        	
+		}
 };
 
 
@@ -66,7 +72,15 @@ int main(){
 	programmer_combo pair;
 	bool a = pair.check_marks();
 	if (a){
-		cout<<"the programmer pair " << pair.p1.name<<" and "<< pair.p2.name <<" is eligible to work"<<endl;	
+		cout<<"the programmer pair " << pair.p1.name<<" and "<< pair.p2.name <<" is eligible to work"<<endl;
+		cout<<endl;
+		pair.p1.display();
+		cout<<endl;
+		pair.p2.display();
+		cout<<endl;
+		cout<<"Pair details:"<<endl;
+		pair.display_sum();
+			
 	}
 	else
 		cout<<"the pair is not eligible"<<endl;
