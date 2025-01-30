@@ -42,6 +42,7 @@ class programmer{
             cout<<"graudate marks: "<<graduate_marks<<endl;
             cout<<"post graduate marks: "<<postgraduate_marks<<endl;
             cout<<"interview marks: "<<interview_marks<<endl;
+            cout<<"The totals score for "<<name<<" is: "<<  graduate_marks<<"G + "<<postgraduate_marks<<"P + "<<interview_marks<<"I"<<endl;;
         }
 };
 
@@ -62,7 +63,8 @@ class programmer_combo{
         {
         	cout<<"The pair mark in graduate is: "<< p1.graduate_marks + p2.graduate_marks<<endl;
         	cout<<"The pair mark in post graduate is: "<< p1.postgraduate_marks + p2.postgraduate_marks<<endl;
-			cout<<"The pair mark in interview is: "<< p1.interview_marks + p2.interview_marks<<endl;        	
+			cout<<"The pair mark in interview is: "<< p1.interview_marks + p2.interview_marks<<endl;   
+			cout<<"The combined score for "<<p1.name<<" and "<<p2.name<<" is: "<< p1.graduate_marks + p2.graduate_marks<<"G + "<<p1.postgraduate_marks + p2.postgraduate_marks<<"P + "<<p1.interview_marks + p2.interview_marks<<"I"<<endl; 	
 		}
 };
 
