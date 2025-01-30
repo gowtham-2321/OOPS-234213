@@ -46,15 +46,16 @@ class programmer{
 };
 
 class programmer_combo{
-    programmer p1, p2;
+    
     
     public:
+    	programmer p1, p2;
         bool check_marks()
         {
         	p1.get_details();
     		p2.get_details();
     		
-            return ((p1.graduate_marks + p2.graduate_marks > 150) && (p1.postgraduate_marks + p2.postgraduate_marks > 180) && (p1.interview_marks + p2.interview_marks > 9))
+            return ((p1.graduate_marks + p2.graduate_marks > 150) && (p1.postgraduate_marks + p2.postgraduate_marks > 180) && (p1.interview_marks + p2.interview_marks > 9));
              
         }
 };
@@ -65,7 +66,7 @@ int main(){
 	programmer_combo pair;
 	bool a = pair.check_marks();
 	if (a){
-		cout<<"the programmer pair is eligible to work"<<endl;	
+		cout<<"the programmer pair " << pair.p1.name<<" and "<< pair.p2.name <<" is eligible to work"<<endl;	
 	}
 	else
 		cout<<"the pair is not eligible"<<endl;
