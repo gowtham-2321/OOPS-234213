@@ -3,6 +3,7 @@ using namespace std;
 class companyX{
 	
 	static int Capital; // it acts like a global variable and there exists only one Capital variable -> can be updated only by the functions of this particular class and cant be edited by expressions or functions outside this class
+	//a class variable of type int has been declared, even functions can be declared static, and they will be called class member functions.
 	int RAmount;
 	public:
 	void Require(int x){
@@ -14,7 +15,7 @@ class companyX{
 	}
 		
 };
-int companyX:: Capital = 50;
+int companyX:: Capital = 50; // they are called the class variables, and not member variables <----- they belong to the class.
 int main(){
 	companyX A,B,C;
 	A.Require(15);

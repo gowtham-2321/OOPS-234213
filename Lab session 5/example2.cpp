@@ -30,5 +30,6 @@ int main() {
     ptr = nullptr; // the garbage value is cleared and set to 0
     cout<<ptr;
     
+
     return 0;
 }
