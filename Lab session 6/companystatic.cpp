@@ -29,3 +29,4 @@ int main(){
 	cout<<BalC<<endl;
 	return 0;
 }
+//any changes made to static variable by an object will be visible/reflected to all the other objects of the class
