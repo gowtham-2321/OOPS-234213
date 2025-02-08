@@ -18,7 +18,11 @@ class Vehicle
 // first sub class  
 class Car: public Vehicle 
 { 
-  
+  public:
+  	Car()
+  	{
+  		cout << "This is car" <<endl;	
+	}
 }; 
   
 // second sub class 
