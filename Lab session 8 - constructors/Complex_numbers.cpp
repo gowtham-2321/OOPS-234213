@@ -28,6 +28,10 @@ class complex{
 			cout<<"The summation of the given two complex numbers is: "; /*The operator cout is an object Belongs to output stream class Used to perform write operations on the output devices e.g. screen, disk etc.*/
 			display(re, im);
 		}
+
+		~complex() {
+			cout<<"destructor has been called here"<<endl;
+		}
 }; // class construt closed with;
 
 
