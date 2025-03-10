@@ -19,6 +19,6 @@ public:
 int main()
 {
     cat meow;
-    cat.displayAnimalName();
+    meow.displayAnimalName();
     return 0;
 }
