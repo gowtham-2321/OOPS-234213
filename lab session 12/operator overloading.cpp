@@ -12,16 +12,14 @@ public:
          // This is automatically called when '+' is used with
     // between two Complex objects
 
-    Complex operator + (Complex obj) {
+    Complex operator + (Complex obj) { // we pass paramters after the symbol + , based on this arguements the operator works. so the operator function should have object arguements
         //operator keyword followed by the operator that needs to be overloaded
          Complex res;
          res.real = real + obj.real;
          res.imag = imag + obj.imag;
-         return res;
+         return res; // the return type for operator functions should be of type object
     }
-
     void print() { cout << real << " + i" << imag << endl; }
-
 };
 
 int main()
