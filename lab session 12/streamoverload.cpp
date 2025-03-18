@@ -16,7 +16,7 @@ public:
     }
     
     // Overload << operator for output
-    friend ostream& operator<<(ostream& moon, const Complex& c) {
+    friend ostream& operator<<(ostream& moon, const Complex& c) { //invoking the stream required for that particular operator
         moon << c.real << " + " << c.imag << "i";
         return moon;
     }
