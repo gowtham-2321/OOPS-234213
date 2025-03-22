@@ -4,7 +4,7 @@ using namespace std;
 void checker(string name) {
     try {
         if (name == "admin") { 
-            throw name;  // Throwing string
+            throw name;  
         }
         cout << "The chosen username is: " << name << endl;
     }
