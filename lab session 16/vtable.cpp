@@ -22,7 +22,7 @@ int main() {
     void** vtablePtr = *(void***)&d;  // Access vptr inside object
 //Right-hand side (*(void***)&d)
     //&d :represents Address of the object d.
-   //(void***)&d :Treats the object’s address as a pointer to a pointer.
+   //(void***)&d :Treats the objects address as a pointer to a pointer.
    //*(void***)&d:Dereferences that pointer, giving us the vtable address.
 
 //Left-hand side (void** vtablePtr)
